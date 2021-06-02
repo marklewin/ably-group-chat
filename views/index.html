@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ably Chat App</title>
+    <meta name="description" content="A simple chat demo using Ably Pub/Sub" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://www.nexmo.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="//cdn.ably.io/lib/ably.min-1.js"></script>
+    <script src="/chat.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="header">
+        <h1>😁 Ably Chat App 😁</h1>
+      </div>
+
+      <div id="message-area" class="messages"></div>
+
+      <div class="controls">
+        <div id="username" class="username"></div>
+        <form id="textentry">
+          <input id="textbox" type="text" />
+          <input id="submit" type="submit" value="Send" />
+        </form>
+      </div>
+      <div id="typing-indicator" class="indicator"></div>
+    </main>
+  </body>
+</html>
